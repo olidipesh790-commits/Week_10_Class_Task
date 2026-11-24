@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3: Largest Number</title>
+</head>
+<body>
+
+    <h2>Q3: Largest Number</h2>
+    <script>
+        const a = Number(prompt("Enter the first number:"));
+        const b = Number(prompt("Enter the second number:"));
+        const c = Number(prompt("Enter the third number:"));
+        let largest;
+
+        if (a >= b && a >= c) {
+            largest = a;
+        } else if (b >= a && b >= c) {
+            largest = b;
+        } else {
+            largest = c;
+        }
+        console.log("The largest number is:", largest);
+        document.write("The largest number is: " + largest);
+    </script>
+    
+</body>
+</html>

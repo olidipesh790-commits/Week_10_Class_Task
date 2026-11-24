@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head><title>Q10</title></head>
+<body>
+  <input type="number" id="marks" placeholder="Enter marks">
+  <button id="calcBtn">Calculate Grade</button>
+  <p id="result"></p>
+
+  <script>
+    document.getElementById("calcBtn").addEventListener("click", function () {
+      const marks = Number(document.getElementById("marks").value);
+      const result = document.getElementById("result");
+      let grade;
+
+      if (marks < 0 || marks > 100) {
+        result.textContent = "Invalid Marks";
+        return;
+      } else if (marks >= 90) {
+        grade = "A+";
+      } else if (marks >= 80) {
+        grade = "A";
+      } else if (marks >= 70) {
+        grade = "B";
+      } else if (marks >= 60) {
+        grade = "C";
+      } else if (marks >= 50) {
+        grade = "D";
+      } else {
+        grade = "F";
+      }
+
+      result.textContent = "Grade: " + grade;
+    });
+  </script>
+</body>
+</html>

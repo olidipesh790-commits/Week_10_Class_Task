@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q8</title>
+</head>
+<body>
+    <h1 id="heading">Button Clicked: </h1>
+    <button id="clickBtn">Click Me</button>
+    <p id="message"></p>
+
+    <script>
+        let count = 0;
+
+        document.getElementById("clickBtn").addEventListener("click", function(){
+            count++;
+         document.getElementById("heading").textContent = "Button Clicked: " + count;
+            
+        if (count === 10){
+        document.getElementById("messege").textContent = "You have clicked 10 times!";
+          }
+        });
+    </script>
+    
+</body>
+</html>
